@@ -1,81 +1,194 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tentang kamu yang aku simpan dalam diam</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tentang Kamu dalam Diam yang Aku Simpan</title>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
+    :root {
+      --matcha: #a1bfa2;
+      --bg: #f5f9f7;
+      --text: #333;
+    }
+    * {
       margin: 0;
       padding: 0;
-      background: #f5f5f0;
-      color: #333;
-      scroll-behavior: smooth;
+      box-sizing: border-box;
     }
-    header {
-      background: #c5d1b9;
-      padding: 2rem;
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 2.5em;
       text-align: center;
-      font-size: 2rem;
-      font-weight: bold;
-      color: #2e2e2e;
+      margin-bottom: 1em;
+      color: var(--matcha);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 1s ease-out forwards;
     }
     section {
-      padding: 1.5rem;
       max-width: 800px;
-      margin: auto;
-      background: white;
-      margin-bottom: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin: 40px auto;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.8s ease-out forwards;
+    }
+    section:nth-child(n+2) {
+      animation-delay: 0.3s;
     }
     h2 {
-      color: #4b5e3e;
+      color: var(--matcha);
+      margin-bottom: 0.5em;
+      font-size: 1.8em;
     }
     p {
-      line-height: 1.7;
+      margin-bottom: 1em;
+      white-space: pre-wrap;
+      overflow-wrap: break-word;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
       margin-top: 1rem;
     }
-    video {
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-      max-width: 100%;
-      margin-top: 1rem;
-      border-radius: 12px;
+      height: 100%;
+    }
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
 <body>
-  <header>Tentang kamu yang aku simpan dalam diam</header>
 
-  <section>
-    <h2>Bab I: Awal Mula</h2>
-    <p>Aku nggak pernah nyangka kalau semua ini bakal sejauh ini. Aku cuma simpan rasa ini sendiri, nggak berharap banyak. Tapi entah kenapa kamu tetap jadi satu-satunya hal yang aku pikirin setiap hari. Aku inget banget pertama kali lihat kamu waktu itu...</p>
+  <h1>Tentang Kamu dalam Diam yang Aku Simpan</h1>
+
+  <!-- Bab I -->
+  <section id="bab1">
+    <h2>Bab I Pertama Kali Tahu Kamu</h2>
+    <p>Aku masih ingat banget waktu pertama kali tahu kamu. Kita masih SD, dan waktu itu kita belum pernah ngobrol sama sekali. Bahkan saling sapa pun belum. Tapi entah kenapa, aku bisa ingat jelas wajah kamu. Bukan karena kamu paling menonjol di sekolah, bukan juga karena kamu banyak gaya, tapi justru karena kamu kalem dan tenang. Kamu gak banyak bicara, tapi kehadiran kamu tuh tetap terasa. Kamu bukan tipe orang yang berusaha menarik perhatian, tapi justru karena itu aku jadi makin penasaran.
+
+Waktu SD, aku cuma bisa lihat kamu dari jauh. Kadang dari lapangan waktu upacara, kadang pas kita baris sebelum masuk kelas, atau pas istirahat. Aku gak punya keberanian buat mendekat. Aku cuma bisa memperhatikan kamu dari jauh, dalam diam. Diam-diam memperhatikan, diam-diam mengagumi. Waktu itu aku masih kecil, belum ngerti apa-apa tentang perasaan. Tapi sekarang aku sadar, mungkin dari situlah semua ini mulai.
+
+Lucunya, aku gak tahu kenapa kamu bisa begitu membekas. Padahal kita gak pernah ngobrol. Tapi kamu tetap ada dalam ingatanku, seolah kamu ninggalin jejak yang gak bisa aku hapus, walau cuma lewat senyuman kecil atau cara kamu diam dan jalan santai.
+
+Aku pikir setelah lulus SD semuanya bakal selesai. Aku pikir itu cuma rasa sesaat anak kecil yang bakal hilang seiring waktu. Tapi ternyata, aku salah.
+
+Ternyata rasa itu gak pernah benar-benar hilang. Dan aku baru sadar, bahwa sejak pertama kali aku lihat kamu, ada bagian kecil dari diriku yang selalu tertarik sama kamu — dan bagian itu terus tumbuh seiring waktu</p>
   </section>
 
-  <section>
-    <h2>Bab II: Hari-Hari yang Diam</h2>
-    <p>Aku selalu pengen ngobrol, tapi nggak pernah cukup berani buat mulai. Setiap kali kita ketemu, ada banyak hal yang pengen aku omongin, tapi semua itu cuma jadi suara di kepala. Kamu mungkin nggak sadar, tapi kehadiranmu cukup bikin hariku lebih hangat.</p>
+  <!-- Bab II -->
+  <section id="bab2">
+    <h2>Bab II Ternyata Masih Ketemu, Dan Aku Pernah Ngomong Apa yang Aku Rasain</h2>
+    <p>Masuk SMP, awalnya aku gak terlalu mikirin kamu.
+Aku fokus daftar sekolah, cari teman baru, dan adaptasi sama suasana yang beda dari SD.
+Tapi semua berubah waktu hari pembagian kelas.
+
+Di tengah banyaknya wajah asing, aku lihat satu wajah yang familiar.
+Wajah yang pernah aku lihat hampir setiap hari waktu SD.
+Dan waktu itu aku baru sadar: ternyata kita satu sekolah lagi.
+Bahkan, setelah beberapa saat, aku baru tahu kalau kita ternyata sekelas di kelas 8.
+
+Aku gak langsung deket atau jadi temen ngobrol kamu.
+Tapi rasanya beda. Sekarang aku bisa lihat kamu lebih sering. Bukan cuma dari jendela kelas kayak waktu SD, tapi langsung satu ruangan.
+Aku jadi tahu gimana kamu bersikap waktu guru ngajarin, waktu kerja kelompok, waktu kamu diam, atau waktu kamu ketawa.
+
+Yang aneh, dari dulu sampai sekarang, diri kamu gak berubah.
+Tetap yang itu. Wajah yang sama, ekspresi yang khas, dan buat alasan yang entah kenapa… bikin aku nyaman waktu lihat.
+
+Semakin hari, aku makin sering mikir:
+“Aku kayaknya suka deh…”
+Tapi aku tahan-tahan, sampai akhirnya aku ngerasa gak enak sendiri kalau terus disimpan.
+Akhirnya, aku ngungkapin langsung ke kamu. Gak lewat tulisan, gak lewat temen.
+
+Jawabanmu? Bukan yang aku harapkan.
+Tapi aku juga gak kecewa. Karena aku tahu, ini bukan soal harus jadi atau enggak. Ini cuma soal keberanian.
+Dan waktu itu, aku bangga udah berani ngomong.
+
+Setelah itu, semuanya balik biasa. Kita tetap satu kelas, tetap saling tahu, walau gak deket.
+Lalu waktu masuk SMA, aku kira semuanya akan selesai. Tapi ternyata belum.</p>
   </section>
 
-  <section>
-    <h2>Bab III: Tentang Rasa</h2>
-    <p>Aku mulai sadar bahwa yang aku rasain ini bukan cuma sekadar kagum. Aku nyimpen perasaan ini dalam-dalam, karena aku tahu, belum tentu kamu ngerasain hal yang sama. Tapi rasanya juga nggak adil kalau aku pura-pura nggak peduli. Aku peduli, selalu.</p>
+  <!-- Bab III -->
+  <section id="bab3">
+    <h2>Bab III Waktu SMA, Aku Cuma Ingin Nyapa, Gak Lebih</h2>
+    <p>Masuk SMA, aku pikir semua bakal benar-benar berubah.
+Kita udah lulus dari SMP, udah mulai mikir jurusan, masa depan, dan ketemu banyak wajah baru.
+Aku gak terlalu mikir kita bakal satu sekolah lagi, karena jujur aja, waktu itu rasanya udah cukup.
+Aku udah lega karena pernah nyoba ngomong waktu SMP, dan setelah itu aku gak ngarep apa-apa lagi.
+
+Tapi ternyata kita masih satu sekolah lagi.
+Kamu masuk IPA, aku IPS. Jurusan beda, tapi kelas kita gak jauh.
+Dan kayak ada kebiasaan lama yang muncul lagi cuma kali ini bentuknya lebih santai.
+
+Setiap hari aku masih bisa lihat kamu.
+Kadang kamu lewat lorong depan kelas aku, kadang kamu duduk di depan kelas sama temen-temenmu.
+Dan entah kenapa, aku selalu bisa tahu keberadaan kamu, bahkan tanpa niat nyari-nyari.
+
+Yang bikin beda waktu SMA itu, aku mulai sering nyapa kamu.
+Bukan sapaan yang panjang, bukan ngobrol serius.
+Cuma satu kalimat pendek, yang aku ucapkan berulang-ulang di waktu yang berbeda:
+“Hallo, Zah."
+
+Kadang aku ngomong pas kamu lewat, kadang pas papasan di tangga, atau kadang waktu kamu lagi berdiri sendiri.
+Sapaan itu ringan. Aku gak pernah maksain kamu harus jawab.
+Aku juga gak pernah mikir kamu harus nyapa balik.
+
+Karena kenyataannya, kamu memang cuek.
+Dan aku sadar banget itu dari awal.
+Kamu lebih sering jalan aja, diam, atau langsung masuk kelas.
+Jarang senyum balik, jarang juga noleh. Tapi aku gak pernah anggap itu masalah.
+
+Aku ngerti, mungkin buat kamu itu hal kecil yang gak perlu ditanggapi.
+Atau mungkin kamu memang bukan tipe orang yang gampang membalas sapaan dari orang yang gak terlalu dekat.
+Dan aku bisa terima itu sepenuhnya.
+
+Tapi yang jelas, aku senang.
+Karena buatku, cuma bisa nyapa kamu aja udah cukup bikin hati tenang.
+Gak harus dibalas. Gak harus dapet reaksi. Karena itu bukan soal dapat perhatian tapi soal perasaan kecil dalam diri yang belum pernah benar-benar hilang.
+
+Iya, aku masih ada rasa. Gak seperti waktu pertama kali lihat kamu dari jendela kelas SD, atau waktu SMP duduk satu ruangan bareng kamu.
+Tapi rasa itu masih tinggal. Diam. Pelan. Tapi nyata.
+Dan aku gak mau bohong soal itu.
+
+Tapi aku juga tahu batas.
+Aku gak pernah maksain diriku untuk deket lagi.
+Gak pernah nyoba ganggu kamu, atau sok ngajak ngobrol panjang.
+Aku tahu, kamu punya kehidupanmu sendiri, temen-temenmu sendiri, dan mungkin kamu udah lupa sama semua yang pernah aku ucapin dulu.
+
+Tapi itu gak bikin aku nyesel atau ngerasa sedih.
+Karena aku masih bisa lihat kamu.
+Masih bisa bilang “Halo, Zah” tiap kali kamu lewat.
+Dan walaupun kamu gak pernah benar-benar jawab, aku tetap merasa cukup.
+
+Kadang aku mikir, mungkin sapaan itu cuma aku yang inget.
+Mungkin buat kamu itu cuma angin lalu. Tapi buat aku, itu jadi cara kecil untuk tetap merasa dekat, walau dari kejauhan.
+
+Dan sampai lulus pun, aku tetap nyapa. Tetap dengan cara yang sama. Tetap dengan perasaan yang tenang.
+Karena nyapa kamu bukan tentang jawaban. Tapi tentang rasa yang gak pernah aku paksa untuk pergi</p>
   </section>
 
-  <section>
-    <h2>Bab IV: Kalau Saja</h2>
-    <p>Kalau saja aku punya sedikit keberanian, mungkin ceritanya beda. Tapi sekarang aku cuma bisa nulis ini, berharap suatu saat kamu ngerti. Kadang aku ngebayangin kita duduk bareng, cerita tentang hidup, ketawa bareng. Tapi semua itu cuma ada di kepala aku.</p>
-  </section>
-
-  <section>
-    <h2>Bab V: Terima Kasih</h2>
-    <p>Terima kasih udah jadi bagian dari hidupku, meskipun cuma sebentar atau bahkan cuma dari jauh. Kamu itu istimewa, dan aku cuma bisa bilang, semoga kamu selalu bahagia, apapun pilihannya nanti. Dan ini... sedikit dari aku yang nggak pernah bisa aku ucapin langsung.</p>
-    <video controls>
-      <source src="video.mp4" type="video/mp4">
-      Browser kamu tidak mendukung pemutar video.
-    </video>
+  <!-- Bab IV -->
+  <section id="bab4">
+    <h2>Bab IV Setelah Lulus, Kita Fokus Jalan Masing-Masing</h2>
+    <p>[LANJUT DI BAGIAN BERIKUTNYA]</p>
   </section>
 
 </body>
